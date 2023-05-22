@@ -1,0 +1,164 @@
+body {
+font-size: clamp(0.3rem,1rem,1.75rem);
+}
+.navbar li a:hover {
+    font-size: larger;
+    animation: blinking 0.8s infinite;
+    /*background-color: black;*/
+   }
+.row-Abstract{
+    height:950px;
+    /*background-color: blueviolet;*/
+    background: linear-gradient(to right, blue, pink)
+}
+.container-check{
+    background-color: rgba(255,0,0,0.2);
+}
+.img-keep-ratio{
+    aspect-ratio: auto 1/1;
+}
+
+.ytd-card{
+    width: auto;
+    height: 50vh;
+}
+
+.ytd-mini-screen{
+    width: auto;
+    height: 50vh;
+}
+
+.prd-img-wide{
+    width: 350px;
+    height:170px;
+
+}
+.ytd-link-one{
+    width:50%;
+    margin-left:25%;
+}
+
+.logo-footer{
+    width: 50px;
+    height: 50px;
+}
+/*Responsive with Mobile Portrait view*/
+@media (100px < width < 900px){
+.row-Abstract{
+    display: block;
+    height:115vh;
+    background: linear-gradient(to right, white, yellow)
+
+}
+.row-Abstract .col-6{
+    width:100%
+}
+/*
+#Products .container .row {
+    display: block;
+}
+*/
+#PrdStackCraneMiniLoad .ytd-row , #PrdRGV .ytd-row {
+    display: block;
+}
+
+.ytd-card{
+    padding: 5%;
+    width: 340px;
+    height: auto;
+}
+.ytd-mini-screen{
+    width: 320px;
+    height: auto;
+}
+.prd-content{
+    width: 100%;
+}
+.prd-img-wide{
+    width: 350px;
+    height: auto;
+}
+.ytd-link-one{
+    width:100%;
+    margin-left:0%;
+}
+
+
+}
+
+@media (width < 400px){
+    .contact-detail{
+        display: none;
+    }
+    .con-row{
+        display: inline-block;
+        left:0;
+    }
+    .con-col-no-data{
+        display: none;
+    }
+    #ContactUs .row {
+        width: 100%;
+        
+    }
+    #ContactUs .row .col-4{
+        width:60%;
+        margin-left: 25%;  
+         
+    }
+    .contact-icon{
+        padding: 1%;
+    }
+}
+
+
+
+
+
+
+/*Responsive with Mobile Landscape view*/
+@media (height <500px){
+    .row-Abstract{
+    height:1000px;
+    background: linear-gradient(to right, red, greenyellow)
+    }
+    .container .col-6{
+        padding-left: 20%;
+        justify-content: center;
+    }
+    .prd-content{
+        width: 100%;
+    }
+    .prd-img-wide{
+        width: 500px;
+        height: auto;
+    }
+    .ytd-card{
+        padding: 1%;
+        margin-left: 15%;
+    }
+}
+
+
+/********/
+:root {
+    --bs-success: #198754;
+    --bs-teal: #20c997;  
+}
+
+
+
+
+@keyframes blinking{
+    0%{
+        background-color: var(--bs-success);
+        border: 3px solid #666;
+        margin: 2%;
+        
+    }
+    100%{
+        background-color: var(--bs-teal);
+        border: 3px solid #666;
+        margin: 2%;
+    }
+}
